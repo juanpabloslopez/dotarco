@@ -37,7 +37,8 @@ alias config='nvim ~/dotfiles/.config/'
 alias dot='ranger ~/dotfiles'
 alias zrc='nvim ~/dotfiles/.zshrc'
 alias vim='nvim'
-alias cat "bat --style=plain --paging=never"
+alias cat="bat --style=plain --paging=never"
+alias wireshark='sudo wireshark'
 # alias cat = 'ccat'
 # alias ~='~'
 

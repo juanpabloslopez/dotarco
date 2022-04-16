@@ -14,22 +14,16 @@ disabled = false
 style = "bold blue"
 
 [line_break]
-disabled = false
+disabled = true
 
 [directory]
-# format = "$directory"
 style = "bold bright-cyan"
 
 [cmd_duration]
 format = "[$duration]($style) "
 
-[character] # The name of the module we are configuring is "character"
-success_symbol = "[[\\[I\\]](bold white) ➜](bold green)" # The "success_symbol" segment is being set to "➜" with the color "bold green"
-vicmd_symbol = "[[\\[V\\]](bold white) ➜](bold red)"
-error_symbol = "[[\\[I\\]](bold red) ➜](bold red)"
-
 [status]
-disabled = true
+disabled = false
 format = "[$symbol $status]($style) "
 not_found_symbol = ""
 not_executable_symbol = ""
@@ -49,12 +43,10 @@ symbol = " "
 
 [nodejs]
 format = "[$symbol($version )]($style)"
-symbol = " "
 
 [php]
 format = "[$symbol($version )]($style)"
 symbol = " "
-disabled = true
 
 [java]
 format = "[${symbol}(${version} )]($style)"
