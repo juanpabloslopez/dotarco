@@ -1,0 +1,1 @@
+/home/juampi/.fzf/shell/key-bindings.fish
