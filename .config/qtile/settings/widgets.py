@@ -14,7 +14,7 @@ def separator():
     return widget.Sep(**base(), linewidth=0, padding=5)
 
 
-def icon(fg='text', bg='dark', fontsize=16, text="?"):
+def icon(fg='text', bg='dark', fontsize=20, text="?"):
     return widget.TextBox(
         **base(fg, bg),
         fontsize=fontsize,
@@ -32,7 +32,7 @@ def powerline(fg="light", bg="dark", fontsize=37, padding=-3):
     )
 
 
-def workspaces(icon_fontsize=19, window_name_font_size=14): 
+def workspaces(icon_fontsize=24, window_name_font_size=14): 
     return [
         separator(),
         widget.GroupBox(
