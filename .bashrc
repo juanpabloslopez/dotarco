@@ -6,10 +6,26 @@
 [[ $- != *i* ]] && return
 
 alias grep='grep --color=auto'
-alias cat='bat --style=plain --paging=never'
-alias ls='exa --group-directories-first'
 alias tree='exa -T'
 alias dotfiles="git --git-dir $HOME/.dotfiles/ --work-tree $HOME"
+# navigation
+alias ..='cd ..'
+alias ...='cd ../..'
+alias .3='cd ../../..'
+alias .4='cd ../../../..'
+alias .5='cd ../../../../..'
+alias ls='exa --icons --group-directories-first'
+alias l='exa -l --icons --git --group-directories-first'
+alias a='exa -a --icons'
+alias la='exa -l -a --icons --git'
+alias lt='exa -T -a --icons --git --group-directories-first'
+alias v='nvim .'
+alias config='nvim ~/dotfiles/.config/'
+alias dot='ranger ~/dotfiles'
+alias zrc='nvim ~/dotfiles/.zshrc'
+alias vim='nvim'
+alias cat="bat --style=plain --paging=never"
+alias wireshark='sudo wireshark'
 
 # https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
 . ~/.git-prompt.sh
