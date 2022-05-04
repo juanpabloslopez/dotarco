@@ -8,9 +8,9 @@ trayer                 \
     --widthtype pixel  \
     --width 100        \
     --heighttype pixel \
-    --height 18        \
+    --height 24        \
     --align right      \
-    --margin 455       \
+    --margin 750       \
     --transparent true \
     --alpha 0          \
     --tint 0x0F101A    \
