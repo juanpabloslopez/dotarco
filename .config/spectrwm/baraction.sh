@@ -57,6 +57,12 @@ while :; do
         echo -n "$(percentage $bat            )  "
     fi
     echo -n "$bat "
+    
+    # Memory
+    if (( $i % 15 == 0 )); then
+        mem=`free | awk '/Mem/ {printf "%d MiB/%d MiB\n", $3 / 1024.0, $2 / 1024.0 }'` 
+    fi
+    echo -n "$(icon ) $mem "
 
     # Date
     if (( $i % 60 == 0 )); then
