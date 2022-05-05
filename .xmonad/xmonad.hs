@@ -113,7 +113,7 @@ xmobarEscape = concatMap doubleLts
 
 myWorkspaces :: [String]
 myWorkspaces = clickable . (map xmobarEscape)
-    $ ["www", "dev", "term", "ref", "sys", "fs", "img", "vid", "misc"]
+    $ ["dev", "www", "term", "ref", "git", "dock", "db", "fs", "misc"]
   where
     clickable l = ["<action=xdotool key super+" ++ show (i) ++ "> " ++ ws ++ "</action>" | (i, ws) <- zip [1 .. 9] l]
 
@@ -174,7 +174,7 @@ myKeys =
     -- Window nav
     ("M-S-m", spawn "rofi -show"),
     -- Browser
-    ("M-b", spawn "firefox-developer-edition"),
+    ("M-b", spawn "firefox-developer-edition --force-device-scale-factor=1.5"),
     -- File explorer
     ("M-e", spawn "thunar"),
     -- Terminal
