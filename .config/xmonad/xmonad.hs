@@ -116,7 +116,7 @@ myWorkspaces :: [String]
 myWorkspaces = clickable . (map xmobarEscape)
 --                                                                                            
 --    $ ["\xf269 ", "\xe61f ", "\xe795 ", "\xf121 ", "\xf419 ", "\xf308 ", "\xf74a ", "\xf7e8 ", "\xf827 "]
-    $ ["www", "dev", "term", "ref", "git", "dock", "fs", "media", "misc"]
+    $ ["dev", "www", "term", "ref", "git", "dock", "db", "fs", "misc"]
   where
     clickable l = ["<action=xdotool key super+" ++ show (i) ++ "> " ++ ws ++ "</action>" | (i, ws) <- zip [1 .. 9] l]
 
@@ -179,7 +179,7 @@ myKeys =
     -- Window nav
     ("M-S-m", spawn "rofi -show"),
     -- Browser
-    ("M-b", spawn "firefox-developer-edition --force-device-scale-factor=1.5"),
+    ("M-b", spawn "firefox-developer-edition"),
     -- File explorer
     ("M-e", spawn "pcmanfm"),
     -- Terminal
