@@ -10,7 +10,7 @@ Config {
     persistent = True,
     commands = [ 
         Run Date "  %d %b %Y %H:%M " "date" 600,
-        Run Network "wlp2s0" ["-t", " <rx>kb  <tx>kb"] 150,
+        Run Network "wlp0s20f3" ["-t", " <rx>kb  <tx>kb"] 150,
         Run Cpu ["-t", " (<total>%)","-H","50","--high","red"] 150,
         Run Memory ["-t", "  <used>M (<usedratio>%)"] 150,
         Run Com "volume" [] "volume" 10,
@@ -23,7 +23,7 @@ Config {
         \<fc=#e1acff> %updates% </fc>\
         \<fc=#FFB86C> %cpu% </fc>\
         \<fc=#FF5555> %memory% </fc>\
-        \<fc=#c3e88d> %wlp2s0% </fc>\
+        \<fc=#c3e88d> %wlp0s20f3% </fc>\
         \<fc=#82AAFF> %volume% </fc>\
         \<fc=#8BE9FD> %date% </fc>"
 }
