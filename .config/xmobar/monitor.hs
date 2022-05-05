@@ -13,7 +13,7 @@ Config {
         Run Network "wlp0s20f3" ["-t", " <rx>kb  <tx>kb"] 150,
         Run Cpu ["-t", " (<total>%)","-H","50","--high","red"] 150,
         Run Memory ["-t", "  <used>M (<usedratio>%)"] 150,
-        Run Com "volume" [] "volume" 10,
+        -- Run Com "pamixer" ["--get-volume-human"] "volume" 1,
         Run Com "bash" ["-c", "checkupdates | wc -l"] "updates" 3000,
         Run UnsafeStdinReader
     ],
@@ -24,6 +24,8 @@ Config {
         \<fc=#FFB86C> %cpu% </fc>\
         \<fc=#FF5555> %memory% </fc>\
         \<fc=#c3e88d> %wlp0s20f3% </fc>\
-        \<fc=#82AAFF> %volume% </fc>\
         \<fc=#8BE9FD> %date% </fc>"
 }
+        -- This line below will be include when i can fix the problem with the sound
+        -- \<fc=#82AAFF> %volume% </fc>\
+
