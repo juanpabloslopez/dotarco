@@ -174,7 +174,7 @@ myKeys =
     -- Window nav
     ("M-S-m", spawn "rofi -show"),
     -- Browser
-    ("M-b", spawn "firefox-developer-edition --force-device-scale-factor=1.5"),
+    ("M-b", spawn "firefox-developer-edition"),
     -- File explorer
     ("M-e", spawn "thunar"),
     -- Terminal
