@@ -216,7 +216,7 @@ static Key keys[] = {
     { MODKEY, XK_e, spawn, SHCMD("pcmanfm") },
 
     // Browser
-    { MODKEY, XK_b, spawn, SHCMD("firefox") },
+    { MODKEY, XK_b, spawn, SHCMD("firefox-developer-edition --force-device-scale-factor=1.5") },
 
     // Redshift
     { MODKEY, XK_r, spawn, SHCMD("redshift -O 2400") },
