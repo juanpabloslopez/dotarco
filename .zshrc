@@ -137,6 +137,27 @@ fi
 
 ### ALIASES ###
 
+alias grep='grep --color=auto'
+alias tree='exa -T'
+# navigation
+alias ..='cd ..'
+alias ...='cd ../..'
+alias .3='cd ../../..'
+alias .4='cd ../../../..'
+alias .5='cd ../../../../..'
+alias ls='exa --icons --group-directories-first'
+alias l='exa -l --icons --git --group-directories-first'
+alias a='exa -a --icons'
+alias la='exa -l -a --icons --git'
+alias lt='exa -T -a --icons --git --group-directories-first'
+alias v='nvim .'
+alias config='nvim ~/dotfiles/.config/'
+alias dot='ranger ~/dotfiles'
+alias zrc='nvim ~/dotfiles/.zshrc'
+alias vim='nvim'
+alias cat="bat --style=plain --paging=never"
+alias wireshark='sudo wireshark'
+
 #list
 alias ls='ls --color=auto'
 alias la='ls -a'
