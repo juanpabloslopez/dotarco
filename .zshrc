@@ -160,13 +160,6 @@ alias vim='nvim'
 alias cat="bat --style=plain --paging=never"
 alias wireshark='sudo wireshark'
 
-##list
-#alias ls='ls --color=auto'
-#alias la='ls -a'
-#alias ll='ls -alFh'
-#alias l='ls'
-#alias l.="ls -A | egrep '^\.'"
-
 #fix obvious typo's
 alias cd..='cd ..'
 alias pdw='pwd'
