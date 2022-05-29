@@ -25,6 +25,8 @@ call plug#begin()
         Plug 'vim-airline/vim-airline-themes'
         " Indent guides
         Plug 'Yggdroot/indentLine'
+        " Sql
+        Plug 'shmup/vim-sql-syntax'
         " IDE
         Plug 'mhinz/vim-signify'
         Plug 'easymotion/vim-easymotion' " search any object with two characters
