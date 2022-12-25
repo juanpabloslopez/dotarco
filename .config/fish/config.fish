@@ -44,3 +44,8 @@ alias wireshark='sudo wireshark'
 
 ### SETTING THE STARSHIP PROMPT ###
 starship init fish | source
+
+# pnpm
+set -gx PNPM_HOME "/home/juampi/.local/share/pnpm"
+set -gx PATH "$PNPM_HOME" $PATH
+# pnpm end
