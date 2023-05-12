@@ -417,7 +417,7 @@
           <enabled>true</enabled>
           <name>Rofi Nav</name>
         </startupnotify>
-        <command>rofi -show</command>
+        <command>rofi -show drun -show-icons</command>
       </action>
     </keybind>
     <!-- Browser -->
