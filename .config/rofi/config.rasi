@@ -128,4 +128,6 @@ configuration {
 	me-accept-entry: "MouseDPrimary";
 	me-accept-custom: "Control+MouseDPrimary";
 }
-@theme "onedark"
+//@theme "onedark"
+//@theme "/home/juampi/.local/share/rofi/themes/arthur.rasi"
+@theme "/usr/share/rofi/themes/purple.rasi"
