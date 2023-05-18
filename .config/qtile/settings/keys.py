@@ -65,14 +65,16 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod], "r", lazy.spawn("redshift -O 2400")),
     ([mod, "shift"], "r", lazy.spawn("redshift -x")),
 
+    # Visual Studio
+    ([mod], "c", lazy.spawn("code")),
+
     # Screenshot
     ([mod], "s", lazy.spawn("scrot")),
     ([mod, "shift"], "s", lazy.spawn("scrot -s")),
 
     # 4K Monitor
     ([mod, "shift"], "b", lazy.spawn("google-chrome-stable")),
-    ([mod, "shift"], "c", lazy.spawn("code")),
-    ([mod], "c", lazy.spawn("code --force-device-scale-factor=1.5")),
+    ([mod, "shift"], "c", lazy.spawn("code --force-device-scale-factor=0.8")),
 
 
     # ------------ Hardware Configs ------------
