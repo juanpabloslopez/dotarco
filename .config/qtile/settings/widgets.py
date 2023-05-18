@@ -23,7 +23,7 @@ def icon(fg='text', bg='dark', fontsize=20, text="?"):
     )
 
 
-def powerline(fg="light", bg="dark", fontsize=37, padding=-3):
+def powerline(fg="light", bg="dark", fontsize=65, padding=-9.5):
     return widget.TextBox(
         **base(fg, bg),
         text="", # Icon: nf-oct-triangle_left
